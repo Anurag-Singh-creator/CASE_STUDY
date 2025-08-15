@@ -10,6 +10,18 @@ The goal is to:
 The analysis uses **Difference-in-Differences (DiD)** and **Two-Way Fixed Effects (TWFE)** models to measure treatment effects while controlling for trade and time fixed effects.
 
 ---
+### Methodology
+
+Clustering: Trade codes are grouped into 3 clusters to assess heterogeneity in treatment effects.
+
+Treatment Definition: Pricing intervention applied to treatment group from a defined cutoff date.
+
+Models Used:
+
+Difference-in-Differences (DiD) to compute Average Treatment Effect (ATE).
+
+Two-Way Fixed Effects (TWFE) to control for trade-specific and time-specific factors.
+
 
 ## ⚙️ Setup Instructions
 
@@ -25,15 +37,5 @@ python -m venv .venv_maersk
 ### Install Dependencies
 pip install -r requirements.txt
 
-### Methodology
 
-Clustering: Trade codes are grouped into 3 clusters to assess heterogeneity in treatment effects.
-
-Treatment Definition: Pricing intervention applied to treatment group from a defined cutoff date.
-
-Models Used:
-
-Difference-in-Differences (DiD) to compute Average Treatment Effect (ATE).
-
-Two-Way Fixed Effects (TWFE) to control for trade-specific and time-specific factors.
 
